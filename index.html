@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SMART HOME SYSTEM</title>
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/my.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+      <link href="rgb.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->  
+	<script src="js/html5shiv.js"></script>
+	<script src="my.js"></script>
+    <script src="js/respond.min.js"></script>
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+ <style>
+     .sidenava {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  
+}
+
+/* The navigation menu links */
+.sidenava a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  animation-name: fadeInRight; 
+  animation-duration: 2s;
+ 
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenava a:hover {
+  color: orange;
+  animation-name: fadeOutRight; 
+  animation-duration: 2s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenava .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenava {padding-top: 15px;}
+  .sidenava a {font-size: 18px;}
+}
+.imgbtn img {
+  width:62px;
+  height:62px;
+  border-radius: 50%; 
+  padding:4px; 
+  background-color: #668cff;
+ }
+.imgbtn:hover img {
+  width:72px;
+  height:72px;
+  background-color: #1aff1a;
+}
+.imgbtn1 img {
+  width:62px;
+  height:62px;
+  border-radius: 50%; 
+  padding:4px; 
+  background-color: #1ad1ff;
+  animation-name: fadeInLeft; 
+  animation-duration: 5s;
+ }
+.imgbtn1:hover img {
+  width:72px;
+  height:72px;
+  background-color: #00ffaa;
+  animation-name: fadeOutLeft; 
+  animation-duration: 2s;
+}
+.imgbtn2 img {
+  width:62px;
+  height:62px;
+  border-radius: 50%; 
+  padding:4px; 
+  background-color: #3333ff;
+  animation-name: fadeOutUp; 
+  animation-duration: 2s;
+ }
+.imgbtn2:hover img {
+  width:72px;
+  height:72px;
+  background-color: #ffff1a;
+  animation-name: fadeOutUp; 
+  animation-duration: 2s;
+}
+.lang {
+ background-color: orange;
+ border-radius: 15px;
+}
+</style>
+</head><!--/head-->
+
+<body>
+  <div id="mySidenav" class="sidenava" style=" background-color: #000000; border: 2px solid orange;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a onclick="dpuneopenNav()">Pune</a>
+  <a href="#">Remote cantrol switch</a>
+  <a href="#">Online cantrol switch</a>
+  <a href="#">Automatic water tank</a>
+  <a href="#">Temperature cantrol</a>
+</div>
+
+<div id="dpune" class="sidenava" style=" background-color: #000000; border: 2px solid orange;" >
+  <a href="javascript:void(0)" class="closebtn" onclick="dpunecloseNav()">&times;</a>
+  <a href="#">Contact</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+</div>                                                                
+
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<div class="column">
+                                                                        <a class="rgb"><img style="height: 55px; width:55px;  animation-name: zoomInUp; animation-duration: 3s;" src="images/logoround.png" /></a>
+									<div class="glow">
+							                  <h4 style="color:orange; animation-name: fadeInUpBig; animation-duration: 2s; ">Automation is future</h4>
+						                        </div>
+								</div>
+								
+								
+								
+								
+                                                                    
+								
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div><!--/header_top-->
+		        
+
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div id="main">
+	<div id="wind1" class="imgbtn1">
+              <a href="shop.html"><img src="images/home/shop.png">
+               </a>
+         </div>
+         <div id="wind2" class="imgbtn1">
+              <a href="us.html"><img src="images/home/us.png" >
+              </a>
+         </div>
+         <div id="wind3" class="imgbtn1" >
+             <a href="images/home/store.html"><img src="man.png" ></a>
+              
+         </div>
+</div>
+						<div class="btn-group pull-right">
+                                                                  
+							
+							
+							
+                                                           <div class="btn-group">
+								<a class="imgbtn" onclick="openNav()"><img src="images/c1.png" style="animation-name: zoomIn; animation-duration: 5s;"></a>   
+							        
+							</div>
+							<div class="column" id="google_translate_element"></div>
+                           
+					</div>
+					
+					
+					
+					
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	         
+		<div class="header-bottom"><!--header-bottom-->
+			
+	</header><!--/header-->
+	
+
+	<section id="slider"><!--slider-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#slider-carousel" data-slide-to="1"></li>
+							<li data-target="#slider-carousel" data-slide-to="2"></li>
+						</ol>
+						
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1><span>SMART </span>HOME SYSTEM</h1>
+									<h2>Do sumthing differant</h2>
+									<p>Home automation technology. </p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="cb.png" class="girl img-responsive" alt="" />
+									<img src="#.png"  class="pricing" alt="" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-sm-6">
+									<h1><span>SMART </span>HOME SYSTEM</h1>
+									<h2>Office devlapment</h2>
+									<p>pune</p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+                                                                    <div class="sflash">                          
+									<figure><img src="cf.png" class="girl img-responsive" alt="" /></figure>
+									<img src="#.png"  class="pricing" alt="" />
+                                                                    </div>
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="col-sm-6">
+									<h1><span>SMART </span>HOME SYSTEM</h1>
+									<h2>AUTOMETION</h2>
+									<p>REMOTE CANTROL </p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="cb.png" class="girl img-responsive" alt="" />
+									<img src="#.png" class="pricing" alt="" />
+								</div>
+							</div>
+							
+						</div>
+						
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section><!--/slider-->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						
+					
+					
+						
+						
+					
+					</div>
+				</div>
+				
+				<div class="col-sm-9 padding-right">
+					<div class="features_items"><!--features_items-->
+						<h2 class="title text-center">Products</h2>
+						<div id="p1" class="col-sm-4">
+							<div class="product-image-wrapper" style="border-style: solid; border-color: #0099ff;  border-width: 2px; border-radius: 25px; padding: 5px; background-color:: #b3d9ff;" >
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img style="height: relative; width: relative; border-radius:25px; border-color: orange; border-width: 2px;" id="imgp1" src="images/relay5v.jpg" alt="" />
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>Ru 10</h2>
+											<p>5v Relay</p>
+										</div>
+							                </div>
+								</div>
+								<div class="choose">
+                                                                         <div class="column">
+									  <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/relay5v.jpg'"><img src="images/g1.png" /></a>
+                                                                          <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Ir.jpg'"><img src="images/g2.png"  /></a>
+                                                                          <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Pm.jpg'"><img src="images/g3.png" /></a>
+                                                                          <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/Atmega.jpg'"><img src="images/g4.png"  /></a>
+                                                                          <a class="imgbtn1" onclick="document.getElementById('imgp1').src='images/16hz.jpg'"><img src="images/g5.png" /></a>
+                                                                         </div>
+                                                                          <h2>10 Ru</h2>
+								          <p>Relay 5v</p>
+                                                                         <div class="column">
+                                                                          <a class="imgbtn2" href=""><img src="amazon.png" ></a>       
+								          <a class="imgbtn2" href=""><img src="paytm.png" ></a>       
+								          <a class="imgbtn2" href=""><img src="flipkart.png" ></a>       
+								          <a class="imgbtn2" href=""><img src="indiamart.png" ></a> 
+								         </div>
+							       </div>
+						      </div>
+						</div>
+                                                
+					</div><!--features_items-->
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+	<footer id="footer"><!--Footer-->
+
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2><span>SMART</span>HOME SYSTEM</h2>
+							<p>Smart Devices</p>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						
+					</div>
+					<div class="col-sm-3">
+						<div class="address">
+							<img src="mapss.png" alt="" />
+                                                                            
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Online Help</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Order Status</a></li>
+								<li><a href="#">Change Location</a></li>
+								<li><a href="#">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Quock Shop</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">smart switch</a></li>
+								<li><a href="#">smart fan</a></li>
+								<li><a href="#">remote cantrol</a></li>
+								<li><a href="#">motion cantrol</a></li>
+								<li><a href="#">temp cantrol</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2 class="glow">smart home system</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Company Information</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Store Location</a></li>
+								<li><a href="#">Affillate Program</a></li>
+								<li><a href="#">Copyright</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2021 SMART HOME SYSTEM All rights reserved.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="https://smarthomesystem.in/">sangmeshwar wadde</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'hi'}, 'google_translate_element');
+}
+</script>	
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} 
+function dpuneopenNav() {
+  document.getElementById("dpune").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function dpunecloseNav() {
+  document.getElementById("dpune").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} 
+
+</script>
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
